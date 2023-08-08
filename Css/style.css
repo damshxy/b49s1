@@ -1,40 +1,48 @@
+section {
+  display: flex;
+}
+
 .containerCard {
+  display: flex;
   margin: 100px auto;
   padding: 50px;
-  width: 600px;
-  border: 1px solid black;
+  width: 1200px;
   border-radius: 8px;
   box-shadow: 0 0 15px #cecece;
 }
 
 .containerCard .title {
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .containerCard .paragraf {
+  gap: 20px;
   text-align: justify;
+}
+
+.containerCard .buttonCv {
+  display: flex;
+  margin-top: 15px;
 }
 
 .containerCard .buttonCv button {
   margin-top: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 8px 20px;
   border-radius: 8px;
   background-color: black;
   color: white;
 }
 
+
 .containerCard .buttonCv p {
-  margin-top: 10px;
+  margin: 20px;
 }
 
 .containerCard .social {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 15px;
   font-size: 30px;
-  text-align: center;
 }
 
 .containerCard .social i {
@@ -43,7 +51,7 @@
 
 .card {
   width: 450px;
-  margin: 10px auto;
+  margin: 10px 25px;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 15px #cecece;
