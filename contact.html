@@ -50,7 +50,7 @@
           <!-- Input PhoneNumber -->
           <div class="phone">
             <label for="input-phone">Phone Number</label>
-            <input type="text" id="input-phone" />
+            <input type="number" id="input-phone" />
           </div>
           <!-- End Of input PhoneNumber -->
           <!-- Input Subject -->
@@ -65,19 +65,20 @@
           </div>
           <!-- End Of Input Subject -->
           <!-- Input Massage -->
-          <div class="massage">
-            <label for="input-massage">Your Massage</label>
-            <textarea id="input-massage" cols="50" rows="10"></textarea>
+          <div class="message">
+            <label for="input-message">Your Message</label>
+            <textarea id="input-message" cols="50" rows="10" ></textarea>
           </div>
           <!-- End Of Input Massage -->
           <!-- Button Form -->
           <div class="buttonForm">
-            <button>Submit</button>
+            <button type="button" onclick="submitContact()">Submit</button>
           </div>
           <!-- End Of Button Form -->
         </div>
       </div>
     </form>
     <!-- End Of Contact Form -->
+    <script src="Js/contact.js"></script>
   </body>
 </html>
