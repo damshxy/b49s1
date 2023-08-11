@@ -24,10 +24,13 @@ function addedProject(event) {
   image = URL.createObjectURL(image[0]);
   console.log(image);
 
+  let getDistanceTime = distanceTime();
+
   let projectDataObject = {
     projectName,
     startDate,
     endDate,
+    getDistanceTime,
     nodeChecked,
     golangChecked,
     reactChecked,
@@ -42,6 +45,7 @@ function addedProject(event) {
   renderProject();
 }
 
+
 function renderProject() {
   document.getElementById("container-card").innerHTML = "";
   for (let i = 0; i < dataProject.length; i++) {
@@ -51,8 +55,10 @@ function renderProject() {
       <img src="${dataProject[i].image}" alt="image-project" />
     </div>
     <div class="title-and-duration">
-      <h3>${dataProject[i].projectName}</h3>
-      <p>Duration: 3 Month</p>
+      <h3>
+        <a href="detail-project.html">${dataProject[i].projectName}</a>
+      </h3>
+      <p>Duration: ${dataProject[i].getDistanceTime}</p>
     </div>
     <div class="description-project">
       <p>
@@ -75,5 +81,33 @@ function renderProject() {
     </div>
   </div>
     `;
+  }
+}
+
+function distanceTime() {
+  let startDate = new Date(document.getElementById("input-start-date").value);
+  let endDate = new Date(document.getElementById("input-end-date").value);
+  let distance = new Date(endDate) - new Date(startDate);
+  let days = Math.floor(distance / (1000 * 3600 * 24));
+  let weeks = Math.floor(distance / (1000 * 3600 * 24 * 7));
+  let months = Math.floor(distance / (1000 * 3600 * 24 * 30));
+  let years = Math.floor(distance / (1000 * 3600 * 24 * 30 * 12));
+
+  if (years == 1) {
+    return `${years} year`;
+  } else if (years > 0) {
+    return `${years} years`;
+  } else if (months == 1) {
+    return `${months} month`;
+  } else if (months > 0) {
+    return `${months} months`;
+  } else if (weeks == 1) {
+    return `${weeks} week`;
+  } else if (weeks > 0) {
+    return `${weeks} weeks`;
+  } else if (days == 1) {
+    return `${days} day`;
+  } else if (days > 0) {
+    return `${days} days`;
   }
 }
