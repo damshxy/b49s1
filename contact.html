@@ -13,21 +13,35 @@
     <nav>
       <div class="nav-left">
         <ul>
-            <li>
-                <img src="image/logo.png" alt="Logo" />
-            </li>
           <li>
-            <a href="index.html" class="active">Home</a>
+            <img src="image/logo.png" alt="Logo" />
           </li>
           <li>
-            <a href="myProject.html">My Project</a>
+            <a href="index.html" class="item-collapse">Home</a>
+          </li>
+          <li>
+            <a href="myProject.html" class="item-collapse">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="">Contact Me</a>
+        <a href="" class="active item-collapse">Contact Me</a>
+      </div>
+      <div class="btn-barsMenu">
+        <button
+          class="btn-barsMenu"
+          id="btn-barsMenu"
+          onclick="openHamburger()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myProject.html" class="hamburger-active">My Project</a>
+      <a href="contact.html" class="btn-hamburger-contact">Contact Me</a>
+    </div>
     <!-- End Of Navbar -->
 
     <!-- Contact Form -->
@@ -67,7 +81,7 @@
           <!-- Input Massage -->
           <div class="message">
             <label for="input-message">Your Message</label>
-            <textarea id="input-message" cols="50" rows="10" ></textarea>
+            <textarea id="input-message" cols="50" rows="10"></textarea>
           </div>
           <!-- End Of Input Massage -->
           <!-- Button Form -->
@@ -80,5 +94,6 @@
     </form>
     <!-- End Of Contact Form -->
     <script src="Js/contact.js"></script>
+    <script src="Js/index.js"></script>
   </body>
 </html>

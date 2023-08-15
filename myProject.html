@@ -24,17 +24,25 @@
             <img src="image/logo.png" alt="Logo" />
           </li>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="item-collapse">Home</a>
           </li>
           <li>
-            <a href="#" class="active">My Project</a>
+            <a href="#" class="active item-collapse">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="contact.html">Contact Me</a>
+        <a href="contact.html" class="item-collapse">Contact Me</a>
       </div>
+      <button class="btn-barsMenu" id="btn-barsMenu" onclick="openHamburger()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myProject.html" class="hamburger-active">My Project</a>
+      <a href="contact.html" class="btn-hamburger-contact">Contact Me</a>
+    </div>
     <!-- End Of Navbar -->
 
     <!-- Added Project -->
@@ -137,9 +145,72 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="image-project">
+            <img src="image/blog-img.png" alt="image-project" />
+          </div>
+          <div class="title-and-duration">
+            <h3>
+              <a href="detail-project.html">Dumbways Mobile App - 2022</a>
+            </h3>
+            <p>Duration: 3 Month</p>
+          </div>
+          <div class="description-project">
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloaded on playstore. Happy Download
+            </p>
+          </div>
+          <div class="tech-project">
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-golang"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="button-group">
+            <div class="btn-edit">
+              <button type="button">Edit</button>
+            </div>
+            <div class="btn-delete">
+              <button type="button">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-project">
+            <img src="image/blog-img.png" alt="image-project" />
+          </div>
+          <div class="title-and-duration">
+            <h3>
+              <a href="detail-project.html">Dumbways Mobile App - 2022</a>
+            </h3>
+            <p>Duration: 3 Month</p>
+          </div>
+          <div class="description-project">
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloaded on playstore. Happy Download
+            </p>
+          </div>
+          <div class="tech-project">
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-golang"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="button-group">
+            <div class="btn-edit">
+              <button type="button">Edit</button>
+            </div>
+            <div class="btn-delete">
+              <button type="button">Delete</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Of Card Project -->
     <script src="Js/myProject.js"></script>
+    <script src="Js/index.js"></script>
   </body>
 </html>

@@ -39,3 +39,37 @@ nav ul li .active {
     background-color: black;
     color: white;
 }
+
+#btn-barsMenu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .hamburger-nav-container {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+  }
+  
+  .hamburger-nav-container a {
+    text-decoration: none;
+    color: black;
+    background-color: #9a9a9a;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }

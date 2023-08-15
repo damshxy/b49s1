@@ -74,3 +74,30 @@ section {
 .card p {
   font-size: 20px;
 }
+
+@media only screen and (max-width: 1100px) {
+  #btn-barsMenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  .containerCard {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
+
+  .social {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right {
+    margin: 10px auto;
+  }
+}
+
