@@ -75,7 +75,7 @@ section {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1350px) {
   #btn-barsMenu {
     display: block;
     cursor: pointer;
@@ -98,6 +98,14 @@ section {
 
   .right {
     margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .containerCard {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
   }
 }
 

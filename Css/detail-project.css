@@ -75,3 +75,14 @@
     margin: 90px auto;
     padding: 90px;
 }
+
+@media only screen and (max-width: 1350px) {
+    #btn-barsMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .item-collapse {
+        display: none;
+    }
+}

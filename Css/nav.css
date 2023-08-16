@@ -63,6 +63,10 @@ nav ul li .active {
     justify-content: center;
     padding: 10px;
   }
+
+  .hamburger-nav-container a:hover {
+    color: white;
+  }
   
   .hamburger-nav-container .hamburger-active {
     text-decoration: none;

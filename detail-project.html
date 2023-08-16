@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/all.css" />
     <link rel="stylesheet" href="Css/nav.css" />
-    <link rel="stylesheet" href="Css/detail-project.css" />
+    <link rel="stylesheet" href="Css/detail-project.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,26 +16,39 @@
     <title>Detail Project</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li>
-            <img src="image/logo.png" alt="Logo" />
-          </li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="myProject.html" class="active">My Project</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <a href="contact.html">Contact Me</a>
-      </div>
-    </nav>
-    <!-- End Of Navbar -->
+   <!-- Navbar -->
+   <nav>
+    <div class="nav-left">
+      <ul>
+        <li>
+          <img src="image/logo.png" alt="Logo" />
+        </li>
+        <li>
+          <a href="index.html" class="item-collapse">Home</a>
+        </li>
+        <li>
+          <a href="myProject.html" class="item-collapse">My Project</a>
+        </li>
+        <li>
+          <a href="testimonial.html" class="item-collapse">Testimonial</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="item-collapse">Contact Me</a>
+    </div>
+    <button class="btn-barsMenu" id="btn-barsMenu" onclick="openHamburger()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+    <a href="index.html">Home</a>
+    <a href="myProject.html">My Project</a>
+    <a href="testimonial.html">Testimonial</a>
+    <a href="contact.html" class="btn-hamburger-contact">Contact Me</a>
+  </div>
+  <!-- End Of Navbar -->
 
     <!-- Detail Project -->
     <section>
@@ -124,5 +137,6 @@
       </div>
     </section>
     <!-- End OF Detail Project -->
+    <script src="Js/index.js"></script>
   </body>
 </html>
