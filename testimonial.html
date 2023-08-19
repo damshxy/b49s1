@@ -53,10 +53,33 @@
     <!-- Section Testimonial -->
     <section>
       <div class="container">
-          <h1>My Testimonials</h1>
-          <div class="testimonials" id="testimonials">
-            <!-- <div class="card-testimonial">
-                <div class="image-testimonial">
+        <h1>My Testimonials</h1>
+        <div class="container-rating">
+          <h2>Rating By Star</h2>
+          <div class="rating">
+            <button class="rating-btn" onclick="allTestimonialData()">
+              All
+            </button>
+            <button class="rating-btn" onclick="filterTestimonial(1)">
+              1 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-btn" onclick="filterTestimonial(2)">
+              2 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-btn" onclick="filterTestimonial(3)">
+              3 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-btn" onclick="filterTestimonial(4)">
+              4 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-btn" onclick="filterTestimonial(5)">
+              5 <i class="fa-solid fa-star"></i>
+            </button>
+          </div>
+        </div>
+        <div class="testimonials" id="testimonials">
+          <div class="card-testimonial">
+            <!-- <div class="image-testimonial">
                     <img src="image/data-testimonial.jpg" alt="image-testimonial"/>
                 </div>
                 <div class="desc-testimonial">
@@ -65,6 +88,9 @@
                 <div class="author-testimonial">
                     <h5>- Anna Maria</h5>
                 </div>
+                 <div class="stars-rating">
+                    <p>${item.rating}<i class="fa-solid fa-star"></i></p>
+                  </div>
             </div>
             <div class="card-testimonial">
                 <div class="image-testimonial">

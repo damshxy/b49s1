@@ -16,7 +16,7 @@
 .card-testimonial {
     margin: 80px auto;
     padding: 30px;
-    width: 650px;
+    width: 550px;
     border-radius: 8px;
     box-shadow: 0 0 15px #cecece;
 }
@@ -36,6 +36,33 @@
 
 .testimonials .card-testimonial .author-testimonial {
     margin-top: 20px;
+    text-align: end;
+}
+
+.container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-btn {
+    margin: 20px;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.rating-btn i {
+    color: white;
+}
+
+.stars-rating {
+    margin-top: 15px;
     text-align: end;
 }
 
