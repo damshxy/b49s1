@@ -45,6 +45,10 @@
     align-items: center;
 }
 
+.container-rating > h2 {
+    margin-top: 20px;
+}
+
 .rating-btn {
     margin: 20px;
     padding: 0px 20px;
