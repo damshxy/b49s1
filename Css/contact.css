@@ -25,7 +25,7 @@
 }
 
 .inputForm .subject {
-    width: 105%;
+    width: 100%;
 }
 
 .inputForm .subject select {
@@ -45,7 +45,7 @@
     width: 120px;
     border-radius: 8px;
     background-color: black;
-    color: white;
+    color: white !important;
     cursor: pointer;
 }
 

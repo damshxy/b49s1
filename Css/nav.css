@@ -37,7 +37,7 @@ nav ul li .active {
     padding: 8px 20px;
     border-radius: 8px;
     background-color: black;
-    color: white;
+    color: white !important;
 }
 
 #btn-barsMenu {

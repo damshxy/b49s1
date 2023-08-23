@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="Css/all.css" />
     <link rel="stylesheet" href="Css/nav.css" />
     <link rel="stylesheet" href="Css/detail-project.css">
@@ -16,26 +22,28 @@
     <title>Detail Project</title>
   </head>
   <body>
-   <!-- Navbar -->
-   <nav>
-    <div class="nav-left">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left d-flex mt-2">
       <ul>
-        <li>
-          <img src="image/logo.png" alt="Logo" />
+        <li class="nav-item">
+          <a class="nav-brand" href="index.html">
+            <img src="image/logo.png" alt="Logo" />
+          </a>
         </li>
-        <li>
-          <a href="index.html" class="item-collapse">Home</a>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link item-collapse active">Home</a>
         </li>
-        <li>
-          <a href="myProject.html" class="item-collapse">My Project</a>
+        <li class="nav-item">
+          <a href="myProject.html" class="nav-link item-collapse">Add Project</a>
         </li>
-        <li>
-          <a href="testimonial.html" class="item-collapse">Testimonial</a>
+        <li class="nav-item">
+          <a href="testimonial.html" class="nav-link item-collapse">Testimonial</a>
         </li>
       </ul>
-    </div>
-    <div class="nav-right">
-      <a href="contact.html" class="item-collapse">Contact Me</a>
+      <form class="nav-right nav-item item-collapse">
+        <a href="contact.html" class="btn">Contact Me</a>
+      </form>
     </div>
     <button class="btn-barsMenu" id="btn-barsMenu" onclick="openHamburger()">
       <i class="fa-solid fa-bars"></i>
@@ -43,8 +51,8 @@
   </nav>
 
   <div class="hamburger-nav-container" id="hamburger-nav-container">
-    <a href="index.html">Home</a>
-    <a href="myProject.html">My Project</a>
+    <a href="index.html" class="hamburger-active">Home</a>
+    <a href="myProject.html">Add Project</a>
     <a href="testimonial.html">Testimonial</a>
     <a href="contact.html" class="btn-hamburger-contact">Contact Me</a>
   </div>
@@ -138,5 +146,10 @@
     </section>
     <!-- End OF Detail Project -->
     <script src="Js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
